@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.links-logo {
+  margin-right: 2rem;
+}
+
+.links-logo img {
+  width: 100px;
+  height: 40px;
+}
+
+.links-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+}
+
+.nav-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links-wrapper p a,
+.nav-button p,
+.nav-menu-wrapper p a {
+  color: #333333;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-menu-wrapper p a {
+  color: #fff;
+}
+
+.nav-button button,
+.nav-menu-wrapper button {
+  padding: 0.5rem 2rem;
+  color: #fff;
+  background-color: #3aafa9;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.nav-menu-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: end;
+  background: #17252a;
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5 rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu-wrapper p a {
+  margin: 1rem 0;
+  text-decoration: none;
+}
+
+.nav-menu-wrapper-button {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .links-wrapper {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    padding: 2rem 4rem;
+  }
+
+  .nav-button {
+    display: none;
+  }
+
+  .nav-menu-wrapper {
+    top: 20px;
+  }
+
+  .nav-menu-wrapper-button {
+    display: block;
+  }
+}
